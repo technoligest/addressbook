@@ -48,6 +48,7 @@ public class AddressbookUI extends UI {
     // example as EJB or Spring Data based service.
     ContactService service = ContactService.createDemoService();
 
+    
     /*
      * The "Main method".
      *
