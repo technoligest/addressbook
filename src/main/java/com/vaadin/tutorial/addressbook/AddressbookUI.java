@@ -74,15 +74,14 @@ public class AddressbookUI extends UI {
         filter.setInputPrompt("Filter contacts...");
         filter.addTextChangeListener(e -> refreshContacts(e.getText()));
 
-        contactList
-                .setContainerDataSource(new BeanItemContainer<>(Contact.class));
-        contactList.setColumnOrder("firstName", "lastName", "email");
+        contactList.setContainerDataSource(new BeanItemContainer<>(Contact.class));
+        contactList.setColumnOrder("firstName", "lastName", "task", "startDate", "expectedEndDate");
         contactList.removeColumn("id");
         contactList.removeColumn("birthDate");
         contactList.removeColumn("phone");
+        contactList.removeColumn("email");
         contactList.setSelectionMode(Grid.SelectionMode.SINGLE);
-        contactList.addSelectionListener(
-                e -> contactForm.edit((Contact) contactList.getSelectedRow()));
+        contactList.addSelectionListener(e -> contactForm.edit((Contact) contactList.getSelectedRow()));
         refreshContacts();
     }
 

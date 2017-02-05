@@ -36,6 +36,7 @@ public class ContactService {
             Calendar cal = Calendar.getInstance();
             for (int i = 0; i < 100; i++) {
                 Contact contact = new Contact();
+                contact.setTask("Something");
                 contact.setFirstName(fnames[r.nextInt(fnames.length)]);
                 contact.setLastName(lnames[r.nextInt(fnames.length)]);
                 contact.setEmail(contact.getFirstName().toLowerCase() + "@"
@@ -44,7 +45,10 @@ public class ContactService {
                 cal.set(1930 + r.nextInt(70),
                         r.nextInt(11), r.nextInt(28));
                 contact.setBirthDate(cal.getTime());
+                contact.setExpectedEndDate(cal.getTime());
+                contact.setStartDate(cal.getTime());
                 contactService.save(contact);
+
             }
             instance = contactService;
         }
