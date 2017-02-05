@@ -8,4 +8,4 @@ deploy:
   api_key: cc06e754-3f30-4d0d-8fc9-be7beb199969
   app: yaseraddressbook
   on:
-    repo: technoligest/addressbook
+    repo: technoligest/yaseraddressbook
