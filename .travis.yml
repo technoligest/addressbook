@@ -8,9 +8,7 @@ addons:
   apt:
     packages:
       - oracle-java8-installer
-
 sudo: false
-
 script: 
 	- sudo /usr/local/maven/bin/mvn clean package
 	- jdk_switcher use oraclejdk8
