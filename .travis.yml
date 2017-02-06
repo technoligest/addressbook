@@ -5,7 +5,8 @@ jdk:
 - oraclejdk8
 deploy:
   provider: heroku
-  api_key: cc06e754-3f30-4d0d-8fc9-be7beb199969
-  app: yaseraddressbook
+  api_key:
+    secure: liOfaETn7RRPzFWwbtOIVZCWWc+HiLAINhtDLt6WdguFvnviuTwbQwxcz+qlvPvzgCz/guTx1QqiAZgfgqjIL70EVI/xoEykiNGdGqum4HqMhUzHo5TU+P2mdkGuR9dzB/M9t0I/x2LsVYmBNJ6YrUOxm6Xz8b8MnxFMckID4aMLDD6Bh4wFoifmgEZvhJmMHnlCYHhDa36r3hALQz1S56T4+0shcr3uim0AqUJobddX7a1uhsQNhR2OIqazqT3rmD/dMqoWNgKbzlbK2wMCLXDeeU/aimjiWGDH6wFb2F28Wz7NT0LJmi4K1yo2JzxfZwKz4sQ/+o0Q077s4+p13t7Fn1ZV1k7kRlJmZy4Q+1nS4Iyq+vOqNvPmLmE5lOUYXapkAI1zQxL7z2xy9Hr9sooCtzt5m4iKIsEc+rtsO7lStUC40Q0epNV1YiiCZYyBYbR34SsULRuzn8D1BmMZJ4u5ZipyI75HORUFKzUIAGVZY94o4MUrEu+QmOqXWA1loCtv1qTbe8HiYI2dleWj2c3HTkTPIyMQH5QH16bY8PxXK58NYHNoMLerZes9JbkIFSs0BMhzq7hykeKsgJBFmPgurhQP5V0IHPMg22EPmotgw9ycTo5V2qJqXOHxMl1BTdJcQxWg1XDTP9xV6W3SxUgZ/gStOM+JNK9WrmZlcek=
+  app: guarded-caverns-25808
   on:
-    repo: technoligest/yaseraddressbook
+    repo: technoligest/addressbook
